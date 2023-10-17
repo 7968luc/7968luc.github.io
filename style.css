@@ -1,3 +1,4 @@
+/* Header CSS */
 /* red and gold colors */
 .r {
   color: #8d0034;
@@ -19,18 +20,33 @@
 .text-logo {
   padding-left: 10px;
 }
-.page-body {
-  /* text body */
-  clear: both; /* prevent from being in-line with shield & logo */
-}
+
+/* Navigation Bar CSS */
 .nav-link,
 .nav-link:visited {
   color: green;
 }
 .join-us {
   font-weight: bold;
-  color: lightgreen;
+  color: lightgreen !important;
 }
+.hide {
+  display: none;
+}
+#welcome.hide:target,
+#competitions.hide:target,
+#joinus.hide:target,
+#members.hide:target,
+#aboutloyola.hide:target {
+  display: block;
+}
+
+/* Misc. Body CSS */
+.page-body {
+  /* text body */
+  clear: both; /* prevent from being in-line with shield & logo */
+}
+
 .inbodyHeader {
   background-color: white;
   color: black;
