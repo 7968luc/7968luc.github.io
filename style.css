@@ -47,7 +47,7 @@
   clear: both; /* prevent from being in-line with shield & logo */
 }
 
-.inbodyHeader {
+.textHeader {
   background-color: white;
   color: black;
 }
