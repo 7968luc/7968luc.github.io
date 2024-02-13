@@ -12,48 +12,93 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <style>
+      .callout-textbody {
+        font-family: monospace;
+        font-size: 2.5em;
+        padding-left: 1em;
+      }
+      .typing-demo {
+        width: 90%;
+        animation: typing 1s steps(34), blink 0.5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid;
+        font-family: monospace;
+        font-size: 2.5em;
+        color: lightgreen;
+        padding-left: 1em;
+      }
+
+      .typing-demo pre {
+        color: lightgreen;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
   </head>
   <body>
     <div style="padding-top: 10%"><!-- Buffer from top of screen --></div>
-    <pre style="font-size: 1.75em; text-align: center">
+    <pre style="font-size: 1.75em; text-align: center; padding-bottom: 1em">
 ░██████████    ██████        ████      ██████░    
 ░██      ██  ██      ██    ██        ██      ██░  
          ██  ██      ██  ██          ██      ██░  
        ██      ████████  ████████      ██████░    
     ░██              ██  ██      ██  ██      ██░  
     ░██            ██    ██      ██  ██      ██░  
-    ░██        ████        ██████      ██████░    
-        </pre
+    ░██        ████        ██████      ██████░    </pre
     >
 
-    <!-- This div wraps the entire page to set a font size. -->
-    <pre style="font-size: 4em; text-align: center; ">
-Callout Meeting</pre
-    >
-    <div class="callout-textbody">
-        7968 is Loyola's newly-founded cybersecurity competition club. We train students and organize participation in competitions ranging from online CTF challenges to industry-sponsored events. All skill levels and majors welcome. 
+    <div class="typing-demo">
+      <pre>root@kali:~# <span>cat 7968-callout.txt</span></pre>
     </div>
-    <pre style="font-size: 2.5em; padding-left: 1em;">
+    <div id="content" style="visibility: hidden">
+      <div class="callout-textbody">
+        7968 is Loyola's newly-founded cybersecurity competition club. We train
+        students and organize participation in competitions ranging from online
+        CTF challenges to industry-sponsored events. All skill levels and majors
+        welcome.
+      </div>
+      <pre style="font-size: 2.5em; padding-left: 1em">
 {
 "WHO":   "You",
 "WHAT":  "Callout Meeting",
-"WHEN":  "March 18th, 6PM",
-"WHERE": "Cuneo 262",
+"WHEN":  "Thurs, March 21st, 5:30PM",
+"WHERE": "Cuneo ???",
 "WHY":   [
-           "Free Pizza", "Hacking"
+           "Free Pizza", "Hacking",
+           "Fun Cyber Games"
          ],
 "secret": 
     "eW91J3JlIG9uIHRvIHNvbWV0aGluZw"
 }
-    </pre>
-    <div class="callout-textbody">
-    <a class="join-us" href="/callout/callout-meeting.ics">> Add it to your calendar</a><br>
-    <!--
-    Neat things we've done include: <br>
-    * Hacked a hospital <br>
-    * Toured the ███    <br>
-    * Fought hackers to defend an energy company
-    </div> -->
-    <div style="padding-top: 10%"><!-- Buffer after end of page content --></div>
+    </pre
+      >
+      <div class="callout-textbody">
+        <a class="join-us" href="/callout/callout-meeting.ics"
+          >> Add it to your calendar</a
+        ><br />
+      </div>
+      <div style="padding-top: 10%">
+        <!-- Buffer after end of page content -->
+      </div>
+    </div>
   </body>
+  <script>
+    setTimeout(function () {
+      document.getElementById("content").style.visibility = "visible";
+    }, 1500);
+  </script>
 </html>
