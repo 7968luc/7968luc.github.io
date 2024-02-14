@@ -58,3 +58,11 @@ body {
   font-size: 16px;
   font-family: monospace; /* Request client to use default monospace font */
 }
+
+a {
+  color: green;
+}
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AIOEgMJ4Y+LZQAAAGJJREFUGNONjrENwCAQAw/EIIxGQU0kJmCCSKROwWjZhHQRAiPF1f/bep9hp0IfVzMfKJhvDlQ8CcAt5hx6uPAkK2vHUOOQLAQqhU6g7qEzUYfUx0xU/sp4citsy085WS/0AoUOHTH9eX+qAAAAAElFTkSuQmCC);
+  margin: 0 3px 0 5px;
+}
