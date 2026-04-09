@@ -37,7 +37,8 @@
 #competitions.hide:target,
 #joinus.hide:target,
 #members.hide:target,
-#aboutloyola.hide:target {
+#aboutloyola.hide:target,
+#events.hide:target {
   display: block;
 }
 
