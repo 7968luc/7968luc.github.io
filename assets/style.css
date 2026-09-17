@@ -1,69 +1,68 @@
 /* Header CSS */
 /* red and gold colors */
 .r {
-  color: #8d0034;
+	color: #8d0034;
 }
 .g {
-  color: #febc18;
+	color: #febc18;
 }
 
 /* LUC shield */
 .shield {
-  font-size: 7px;
-  line-height: 125%;
+	font-size: 7px;
+	line-height: 125%;
 }
 .header-element {
-  float: left;
-  padding-left: 4px;
-  padding-right: 4px;
+	float: left;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 .text-logo {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 /* Navigation Bar CSS */
 .nav-link,
 .nav-link:visited {
-  color: green;
+	color: green;
 }
-.join-us {
-  font-weight: bold;
-  color: lightgreen !important;
+.about {
+	font-weight: bold;
+	color: lightgreen !important;
 }
 .hide {
-  display: none;
+	display: none;
 }
-#welcome.hide:target,
 #competitions.hide:target,
-#joinus.hide:target,
+#about.hide:target,
 #members.hide:target,
 #aboutloyola.hide:target,
 #events.hide:target {
-  display: block;
+	display: block;
 }
 
 /* Misc. Body CSS */
 .page-body {
-  /* text body */
-  clear: both; /* prevent from being in-line with shield & logo */
+	/* text body */
+	clear: both; /* prevent from being in-line with shield & logo */
 }
 
 .textHeader {
-  background-color: white;
-  color: black;
+	background-color: white;
+	color: black;
 }
 
 body {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  font-family: monospace; /* Request client to use default monospace font */
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	font-family: monospace; /* Request client to use default monospace font */
 }
 
 a {
-  color: green;
+	color: green;
 }
 a[target="_blank"]::after {
-  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AIOEgMJ4Y+LZQAAAGJJREFUGNONjrENwCAQAw/EIIxGQU0kJmCCSKROwWjZhHQRAiPF1f/bep9hp0IfVzMfKJhvDlQ8CcAt5hx6uPAkK2vHUOOQLAQqhU6g7qEzUYfUx0xU/sp4citsy085WS/0AoUOHTH9eX+qAAAAAElFTkSuQmCC);
-  margin: 0 3px 0 5px;
-}   /* https://stackoverflow.com/a/52058198 */
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AIOEgMJ4Y+LZQAAAGJJREFUGNONjrENwCAQAw/EIIxGQU0kJmCCSKROwWjZhHQRAiPF1f/bep9hp0IfVzMfKJhvDlQ8CcAt5hx6uPAkK2vHUOOQLAQqhU6g7qEzUYfUx0xU/sp4citsy085WS/0AoUOHTH9eX+qAAAAAElFTkSuQmCC);
+	margin: 0 3px 0 5px;
+} /* https://stackoverflow.com/a/52058198 */
